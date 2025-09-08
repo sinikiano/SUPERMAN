@@ -103,11 +103,28 @@ With this separation, the codebase is now ready for:
 - Performance monitoring
 - Additional feature development
 
-## Server Information
+## Deployment
+
+### GitHub Pages
+The site is automatically deployed to GitHub Pages using GitHub Actions:
+
+- **Live URL**: https://sinikiano.github.io/SUPERMAN/
+- **Auto-Deploy**: Triggers on every push to main branch
+- **Workflow**: `.github/workflows/deploy.yml`
+- **Status**: [![Deploy to GitHub Pages](https://github.com/sinikiano/SUPERMAN/actions/workflows/deploy.yml/badge.svg)](https://github.com/sinikiano/SUPERMAN/actions/workflows/deploy.yml)
+
+### Local Development
 - **URL**: http://localhost:8000/superman-coin-landing-enhanced.html
-- **Status**: Active and serving separated files correctly
-- **Performance**: Improved caching and loading efficiency
+- **Command**: `python3 -m http.server 8000`
+- **Status**: Serving separated files with proper caching
+
+## Deployment Files
+```
+.github/workflows/deploy.yml  # GitHub Actions workflow
+index.html                    # Entry point with redirect
+.nojekyll                    # Ensures all files are served
+```
 
 ---
 
-**Task Completed Successfully**: CSS and JavaScript extraction completed with all functionality preserved and enhanced code organization achieved.
+**Task Completed Successfully**: CSS and JavaScript extraction completed with all functionality preserved, enhanced code organization achieved, and GitHub Pages deployment configured.
