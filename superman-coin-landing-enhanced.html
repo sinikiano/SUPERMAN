@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SuperMan (SUPERMAN) – Meme Coin with Super Strength</title>
+  <meta name="description" content="SuperMan (SUPERMAN) is a community-first meme coin built for fun, unity, and fearless growth. Join the SuperMan Army.">
+  <meta property="og:title" content="SuperMan (SUPERMAN) – Meme Coin with Super Strength">
+  <meta property="og:description" content="SuperMan (SUPERMAN) is a community-first meme coin built for fun, unity, and fearless growth. Join the SuperMan Army.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sinikiano.github.io/SUPERMAN/">
+  <meta name="theme-color" content="#9945ff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%239945ff'/><text x='50' y='58' font-size='48' text-anchor='middle' fill='white' font-family='Arial'>S</text></svg>">
+  <link rel="stylesheet" href="style.css">
+
+  <!--
+    Privacy-friendly analytics (choose one and replace placeholders):
+    1) Plausible (recommended): 
+       <script defer data-domain="sinikiano.github.io" src="https://plausible.io/js/script.js"></script>
+    2) Google Analytics 4:
+       <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+       <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-XXXXXXX');</script>
+  -->
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <svg class="mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="SuperMan Coin Logo">
+          <!-- Background circle -->
+          <circle cx="50" cy="50" r="48" fill="#FFD700"/>
+          <!-- Dog face -->
+          <ellipse cx="50" cy="45" rx="38" ry="35" fill="#FF9500"/>
+          <ellipse cx="50" cy="60" rx="28" ry="20" fill="#FFFFFF"/>
+          <!-- Ears -->
+          <ellipse cx="32" cy="28" rx="12" ry="18" fill="#FF9500" transform="rotate(-30 32 28)"/>
+          <ellipse cx="68" cy="28" rx="12" ry="18" fill="#FF9500" transform="rotate(30 68 28)"/>
+          <ellipse cx="32" cy="30" rx="8" ry="12" fill="#000000" transform="rotate(-30 32 30)"/>
+          <ellipse cx="68" cy="30" rx="8" ry="12" fill="#000000" transform="rotate(30 68 30)"/>
+          <!-- Eyes -->
+          <circle cx="42" cy="42" r="3" fill="#000000"/>
+          <circle cx="58" cy="42" r="3" fill="#000000"/>
+          <!-- Eye glints -->
+          <circle cx="43" cy="41" r="1" fill="#FFFFFF"/>
+          <circle cx="59" cy="41" r="1" fill="#FFFFFF"/>
+          <!-- Nose -->
+          <ellipse cx="50" cy="50" rx="3" ry="2" fill="#000000"/>
+          <!-- Mouth -->
+          <path d="M 45 55 Q 50 60 55 55" stroke="#000000" stroke-width="2" fill="none"/>
+          <!-- Tongue -->
+          <ellipse cx="50" cy="57" rx="3" ry="2" fill="#FF0000"/>
+          <!-- Superman cape -->
+          <path d="M 30 30 Q 50 20 70 30 L 70 40 Q 50 30 30 40" fill="#DC143C"/>
+          <!-- Superman symbol -->
+          <ellipse cx="50" cy="25" rx="8" ry="6" fill="#FFD700"/>
+          <text x="50" y="29" font-family="Arial" font-size="8" font-weight="bold" fill="#DC143C" text-anchor="middle">S</text>
+        </svg>
+        <strong style="font-size: 24px; font-weight: 900;">SuperMan</strong>
+        <span class="badge">SUPERMAN</span>
+      </div>
+      <div class="flex-center">
+        <button class="btn secondary" onclick="openModal()">Presale / Claim</button>
+        <button id="themeBtn" class="btn ghost toggle" aria-label="Toggle theme">🌙</button>
+        <a class="btn" href="#buy">Buy / Add to Wallet</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <svg class="hero-mark solana-glow" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <!-- Background circle -->
+        <circle cx="100" cy="100" r="95" fill="#FFD700" stroke="#000000" stroke-width="6"/>
+        <!-- Dog face -->
+        <ellipse cx="100" cy="90" rx="75" ry="70" fill="#FF9500"/>
+        <ellipse cx="100" cy="120" rx="55" ry="40" fill="#FFFFFF"/>
+        <!-- Ears -->
+        <ellipse cx="65" cy="55" rx="24" ry="36" fill="#FF9500" transform="rotate(-25 65 55)"/>
+        <ellipse cx="135" cy="55" rx="24" ry="36" fill="#FF9500" transform="rotate(25 135 55)"/>
+        <ellipse cx="65" cy="60" rx="16" ry="24" fill="#000000" transform="rotate(-25 65 60)"/>
+        <ellipse cx="135" cy="60" rx="16" ry="24" fill="#000000" transform="rotate(25 135 60)"/>
+        <!-- Eyes -->
+        <circle cx="85" cy="85" r="6" fill="#000000"/>
+        <circle cx="115" cy="85" r="6" fill="#000000"/>
+        <!-- Eye glints -->
+        <circle cx="87" cy="83" r="2" fill="#FFFFFF"/>
+        <circle cx="117" cy="83" r="2" fill="#FFFFFF"/>
+        <!-- Nose -->
+        <ellipse cx="100" cy="100" rx="6" ry="4" fill="#000000"/>
+        <!-- Mouth -->
+        <path d="M 90 110 Q 100 120 110 110" stroke="#000000" stroke-width="4" fill="none"/>
+        <!-- Tongue -->
+        <ellipse cx="100" cy="114" rx="6" ry="4" fill="#FF0000"/>
+        <!-- Superman cape -->
+        <path d="M 60 60 Q 100 40 140 60 L 140 80 Q 100 60 60 80" fill="#DC143C"/>
+        <!-- Superman symbol background -->
+        <ellipse cx="100" cy="50" rx="16" ry="12" fill="#FFD700"/>
+        <!-- Superman S -->
+                <text x="100" y="56" font-family="Arial" font-size="16" font-weight="bold" fill="#DC143C" text-anchor="middle">S</text>
+      </svg>
+      <div class="badge">The Meme Coin with Super Strength</div>
+      <h1 class="title">SuperMan (SUPERMAN)</h1>
+      <p class="subtitle">A high‑energy, community‑first meme coin built for fun, unity, and fearless growth. Join the SuperMan Army and help us fly beyond limits.</p>
+      <div class="cta">
+        <a class="btn" href="#tokenomics">View Tokenomics</a>
+        <a class="btn secondary" href="#roadmap">See Roadmap</a>
+      </div>
+    </section>
+
+    <section id="highlights">
+      <div class="grid">
+        <div class="card g-6">
+          <h3>What is SuperMan?</h3>
+          <p>SuperMan is a culture‑driven meme coin designed to rally a strong community around positivity, creativity, and epic memes. No promises, just vibes, utility experiments, and transparent community building.</p>
+          <div class="pill">Community First</div>
+          <div class="pill">Fair Launch*</div>
+          <div class="pill">Meme Culture</div>
+        </div>
+        <div class="card g-6">
+          <h3>Key Stats</h3>
+          <p class="muted">Live on Solana blockchain</p>
+          <div class="crypto-stat">
+            <span>Ticker:</span>
+            <span class="price-ticker">$SUPERMAN</span>
+          </div>
+          <div class="crypto-stat">
+            <span>Blockchain:</span>
+            <span class="chain-badge">
+              ⚡ Solana
+            </span>
+          </div>
+          <div class="contract">
+            <span>Contract:</span> <code class="code" id="contract">7GyrB1dNY3gVMTn8wHwjuQhDqbvHX31yAz9shbq62Cp7</code>
+            <button class="btn secondary" onclick="copy('#contract')">Copy</button>
+          </div>
+          <p class="notice">* Avoid using third‑party IP (e.g., DC's Superman logo). Our visuals are original.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tokenomics">
+      <h2 class="section-title">Tokenomics</h2>
+      <div class="grid">
+        <div class="card g-6">
+          <h3>Supply</h3>
+          <div class="crypto-stat">
+            <span>Total Supply:</span>
+            <span class="price-ticker" id="supply">1,000,000,000</span>
+          </div>
+          <div class="crypto-stat">
+            <span>Decimals:</span>
+            <span class="price-ticker">9</span>
+          </div>
+          <div class="crypto-stat">
+            <span>Chain:</span>
+            <span class="chain-badge solana-glow" id="chain">⚡ Solana</span>
+          </div>
+        </div>
+        <div class="card g-6">
+          <h3>Distribution (example)</h3>
+          <ul class="list">
+            <li>60% – Liquidity & Fair Launch</li>
+            <li>15% – Community Rewards & Airdrops</li>
+            <li>10% – Marketing & Partnerships</li>
+            <li>10% – Treasury / CEX Liquidity</li>
+            <li>5% – Dev & Ops (Vested)</li>
+          </ul>
+        </div>
+        <div class="card g-6">
+          <h3>Taxes (optional)</h3>
+          <p>0/0 by default. If you add taxes, disclose them clearly.</p>
+        </div>
+        <div class="card g-6" id="buy">
+          <h3>Add to Wallet / Buy</h3>
+          <ul class="list">
+            <li>Add token to wallet using the contract address above.</li>
+            <li>Trade via your chosen DEX (add link after launch).</li>
+            <li>Update explorers: CoinGecko / CMC (post‑launch).</li>
+          </ul>
+          <a class="btn" href="#">Trade on DEX (soon)</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="presale">
+      <h2 class="section-title">Presale / Claim (Widget Placeholder)</h2>
+      <div class="card">
+        <p class="muted">This is a front‑end placeholder (no wallet libraries). Replace with your LaunchTool/third‑party widget when ready.</p>
+        <div class="grid">
+          <div class="g-6">
+            <h3>Contribution Address</h3>
+            <div class="contract">
+              <span>Send only <strong id="baseToken">SOL</strong> to:</span>
+              <code class="code" id="saleAddress">7GyrB1dNY3gVMTn8wHwjuQhDqbvHX31yAz9shbq62Cp7</code>
+              <button class="btn secondary" onclick="copy('#saleAddress')">Copy</button>
+            </div>
+            <p class="notice">Wrong-chain or wrong-token transfers may be lost. Always double-check.</p>
+          </div>
+          <div class="g-6">
+            <h3>Progress</h3>
+            <div class="progress"><span id="bar"></span></div>
+            <p><strong id="raised">0</strong> / <strong id="target">100</strong> SOL raised</p>
+            <p>Time left: <strong id="countdown">TBA</strong></p>
+            <div class="flex-wrap">
+              <button class="btn secondary" onclick="fakeConnect()">Connect Wallet</button>
+              <button class="btn" onclick="fakeClaim()">Claim (demo)</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmap">
+      <h2 class="section-title">Roadmap</h2>
+      <ul class="timeline">
+        <li>
+          <h3>Phase 1 – Launch & Community</h3>
+          <p class="muted">Fair launch on LaunchTool.io, socials live, meme blitz, website, and initial liquidity.</p>
+        </li>
+        <li>
+          <h3>Phase 2 – Growth</h3>
+          <p class="muted">DEX listings, influencer collabs, weekly meme contests, airdrops, and analytics dashboard.</p>
+        </li>
+        <li>
+          <h3>Phase 3 – Scale</h3>
+          <p class="muted">CEX outreach, partnerships, and experimental utilities (mini‑games, NFT mints, tipping).</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="community">
+      <h2 class="section-title">Join the SuperMan Army</h2>
+      <div class="card">
+        <p style="text-align: center; margin-bottom: 24px; font-size: 18px; color: var(--muted);">
+          Connect with our community across all platforms and stay updated with the latest SuperMan news!
+        </p>
+        <div class="socials" style="justify-content: center; gap: 16px;">
+          <a href="https://sinikiano.github.io/SUPERMAN/" target="_blank" rel="noopener" style="padding: 16px 24px; font-size: 16px; font-weight: 600;">
+            🌐 Official Website
+          </a>
+          <a href="https://twitter.com/yourcoin" target="_blank" rel="noopener" style="padding: 16px 24px; font-size: 16px; font-weight: 600;">
+            🐦 Twitter / X
+          </a>
+          <a href="https://t.me/Sinikiano" target="_blank" rel="noopener" style="padding: 16px 24px; font-size: 16px; font-weight: 600;">
+            💬 Telegram
+          </a>
+          <a href="https://discord.gg/your-server" target="_blank" rel="noopener" style="padding: 16px 24px; font-size: 16px; font-weight: 600;">
+            🎮 Discord
+          </a>
+        </div>
+        <div style="text-align: center; margin-top: 24px;">
+          <p style="font-size: 14px; color: var(--muted); margin: 0;">
+            Join thousands of SuperMan holders and meme enthusiasts in our growing community!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2 class="section-title">FAQ</h2>
+      <div class="grid">
+        <div class="card g-6">
+          <h3>Is this financial advice?</h3>
+          <p>No. SuperMan is a community‑driven meme project. Always DYOR.</p>
+        </div>
+        <div class="card g-6">
+          <h3>Any trademark issues?</h3>
+          <p>We avoid using third‑party IP (like DC's Superman emblem). Our visuals are original and generic.</p>
+        </div>
+        <div class="card g-6">
+          <h3>How do I verify the contract?</h3>
+          <p>After deployment, publish and verify the contract source on the relevant explorer and link it above.</p>
+        </div>
+        <div class="card g-6">
+          <h3>How can I contribute?</h3>
+          <p>Join Telegram/Discord, propose ideas, create memes, and help with outreach. Community PRs welcome.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <p class="notice">Disclaimer: This website and token are for entertainment and community purposes. Cryptocurrency involves risk. Never invest more than you can afford to lose.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> SuperMan • SUPERMAN • All rights reserved.</div>
+  </footer>
+
+  <!-- Presale modal -->
+  <div id="presaleModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="dialog">
+      <h3 id="modalTitle">Presale / Claim</h3>
+      <p class="muted">Embed your official widget here (LaunchTool, Gempad, PinkSale, etc.).</p>
+      <div class="flex-end">
+        <button class="btn secondary" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
